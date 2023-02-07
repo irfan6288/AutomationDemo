@@ -22,10 +22,10 @@ jobs:
         appcenter builds distribution \
                --token ${APP_CENTER_API_TOKEN} \
                --output ./build \
-               --files ./apk/app.apk
+               --files ./app/release/app-release.apk
 
         # Deploy the APK file to App Center
         appcenter deploy \
                --token ${APP_CENTER_API_TOKEN} \
                --app "YourOrg/YourApp" \
-               --file ./build/app.apk
+               --file ./build/app-release.apk
