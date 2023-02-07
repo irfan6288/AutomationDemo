@@ -3,7 +3,6 @@ name: Deploy app to App Center
 on: [push]
 
 env:
-
 APP_CENTER_API_TOKEN: ${{ secrets.APP_CENTER_API_TOKEN }}
 
 jobs:
